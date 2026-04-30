@@ -17,6 +17,7 @@ function Icon({ name, size = 14, color = "currentColor" }) {
         <path d="M3 13h5l2 3h4l2-3h5" />
       </svg>
     );
+    
   }
   if (name === "vehicle") {
     return (

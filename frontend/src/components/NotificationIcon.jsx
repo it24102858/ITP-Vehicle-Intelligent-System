@@ -18,6 +18,7 @@ function NotificationIcon({ unreadCount = 0, onClick, isOpen = false }) {
         minWidth: "42px",
         color: "var(--text-primary)",
       }}
+      
       title="Notifications"
       onMouseEnter={(e) => {
         if (!isOpen) {

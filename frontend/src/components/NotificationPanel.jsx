@@ -19,6 +19,7 @@ function NotificationPanel({ userId = "user001" }) {
     }
     return { icon: "Inquiry", label: "New Inquiry" };
   };
+  
 
   const loadNotifications = async () => {
     setLoading(true);

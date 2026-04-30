@@ -2,6 +2,7 @@ const Message = require("../models/Message");
 const Notification = require("../models/Notification");
 const Inquiry = require("../models/Inquiry");
 
+
 const sendMessage = async (req, res) => {
   const {
     inquiry_id,

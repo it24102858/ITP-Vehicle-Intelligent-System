@@ -10,6 +10,7 @@ const createNotification = async (req, res) => {
   }
 };
 
+
 const getUserNotifications = async (req, res) => {
   try {
     const notifications = await Notification.find({
