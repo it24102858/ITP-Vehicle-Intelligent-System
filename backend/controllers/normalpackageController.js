@@ -6,6 +6,7 @@ export const getPackages = async (req, res) => {
   res.json(packages);
 };
 
+
 // CREATE package (for provider later)
 export const createPackage = async (req, res) => {
   const newPackage = new Package(req.body);

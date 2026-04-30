@@ -29,6 +29,7 @@ router.get("/package-bookings", async (req, res) => {
   }
 });
 
+
 // DELETE 
 router.delete("/:id", async (req, res) => {
   await Request.findByIdAndDelete(req.params.id);

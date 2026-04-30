@@ -11,7 +11,7 @@ const PaymentModal = ({ isOpen, onClose, onConfirm, amount }) => {
 
   if (!isOpen) return null;
 
-  // FORMAT CARD NUMBER (1234 5678 9012 3456)
+  //  FORMAT CARD NUMBER (1234 5678 9012 3456)
   const formatCardNumber = (value) => {
     const cleaned = value.replace(/\D/g, "").slice(0, 16);
     const groups = cleaned.match(/.{1,4}/g);

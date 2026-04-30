@@ -2,6 +2,7 @@ import Application from "../models/Application.js";
 import Request from "../models/Request.js";
 
 // APPLY service
+
 export const createApplication = async (req, res) => {
   try {
     const payload = { ...req.body };

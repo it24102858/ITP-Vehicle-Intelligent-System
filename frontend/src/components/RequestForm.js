@@ -10,7 +10,7 @@ const RequestForm = ({ onSubmit }) => {
 
   const [errors, setErrors] = useState({});
 
-  // Handle input changes
+  //  Handle input changes
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" }); // clear error on change

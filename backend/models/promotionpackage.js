@@ -52,6 +52,7 @@ const packageSchema = new mongoose.Schema(
 
 // AUTO CALCULATE FINAL PRICE 
 
+
 packageSchema.pre("save", async function () {
   if (this.type === "promotion" && this.discount > 0) {
     this.finalPrice = this.price - (this.price * this.discount) / 100;

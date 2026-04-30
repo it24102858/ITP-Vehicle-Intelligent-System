@@ -6,6 +6,7 @@ export const getPromotions = async (req, res) => {
   res.json(promotions);
 };
 
+
 // CREATE package (for provider later)
 export const createPackage = async (req, res) => {
   const newPackage = new Package(req.body);

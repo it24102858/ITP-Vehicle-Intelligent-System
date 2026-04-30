@@ -4,7 +4,6 @@ import Request from "../models/Request.js";
 
 const router = express.Router();
 
-
 //  CREATE NORMAL PACKAGE 
 router.post("/package", async (req, res) => {
   try {
