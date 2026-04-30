@@ -1,4 +1,4 @@
-# 🚗 VELOCITI — Vehicle Intelligent System
+Vehicle Intelligent System
 
 A full-stack vehicle marketplace with role-based dashboards, JWT authentication, and MongoDB Atlas.
 
