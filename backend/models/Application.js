@@ -8,7 +8,6 @@ const applicationSchema = new mongoose.Schema({
   finalPrice: Number,
   type: String,
   applyDate: Date,
-
   appointmentDate: Date,
   fee: Number,
 

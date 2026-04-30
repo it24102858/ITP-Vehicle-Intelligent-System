@@ -56,6 +56,7 @@ servicePackageSchema.pre('save', function(next) {
     this.finalPrice = this.price;
   }
   next();
+  
 });
 
 module.exports = mongoose.model('ServicePackage', servicePackageSchema);

@@ -21,4 +21,5 @@ const PromotionCard = ({ service, onApply }) => {
   );
 };
 
+
 export default PromotionCard;

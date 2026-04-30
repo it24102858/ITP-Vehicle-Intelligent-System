@@ -1,6 +1,7 @@
 import Request from "../models/Request.js";
 
 // CREATE
+
 export const createRequest = async (req, res) => {
   try {
     const count = await Request.countDocuments();

@@ -56,6 +56,7 @@ router.put('/normal/:id', serviceRoleOnly, async (req, res) => {
       },
       { new: true, runValidators: true }
     );
+    
 
     if (!updated) return res.status(404).json({ msg: 'Package not found' });
     res.json(updated);

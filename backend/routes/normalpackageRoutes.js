@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ msg: "Name, duration and price are required" });
     }
 
-   
+  
 
     const newPackage = await Package.create(req.body);
     res.status(201).json(newPackage);

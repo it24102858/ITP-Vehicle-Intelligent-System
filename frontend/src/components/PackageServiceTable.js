@@ -39,6 +39,7 @@ const PackageServiceTable = ({ data = [], onDelete, onPay, onDownloadPdf }) => {
               } else if (item.paymentStatus === "Paid") {
                 status = "Paid";
               }
+            
 
               return (
                 <tr key={id}>

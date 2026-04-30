@@ -102,6 +102,7 @@ const RequestServiceTable = ({
         </tbody>
       </table>
 
+
       <style jsx>{`
         .service-table {
           overflow-x: auto;

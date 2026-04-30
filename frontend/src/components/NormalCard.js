@@ -13,4 +13,5 @@ const NormalCard = ({ service, onApply }) => {
   );
 };
 
+
 export default NormalCard;

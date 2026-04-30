@@ -12,3 +12,4 @@ router.get("/", getApplications);
 router.delete("/:id", deleteApplication);
 
 export default router;
+

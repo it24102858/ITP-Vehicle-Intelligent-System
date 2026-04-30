@@ -18,6 +18,7 @@ const serviceApplicationSchema = new mongoose.Schema(
     status: { type: String, default: 'Pending' }
   },
   { timestamps: true }
+  
 );
 
 module.exports = mongoose.model('ServiceApplication', serviceApplicationSchema);

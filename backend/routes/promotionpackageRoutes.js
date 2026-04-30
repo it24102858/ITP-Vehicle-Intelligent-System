@@ -13,6 +13,7 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ msg: "Name, duration and price are required" });
     }
 
+    
     // Promotion validation
     if (type === "promotion") {
       if (discount === undefined || discount === null || discount === "") {

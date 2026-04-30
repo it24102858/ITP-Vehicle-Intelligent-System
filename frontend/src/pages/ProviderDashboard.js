@@ -86,7 +86,7 @@ const ProviderDashboard = () => {
     return finalPrice >= 0 ? finalPrice.toFixed(2) : null;
   })();
 
-  // FETCH DATA 
+  //  FETCH DATA 
   useEffect(() => {
     fetchData();
   }, []);
