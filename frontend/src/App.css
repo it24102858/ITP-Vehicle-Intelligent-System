@@ -1,0 +1,260 @@
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch;
+  background:linear-gradient(135deg, #ffffff, #61658d);
+}
+
+.sidebar {
+  width: 220px;
+  background: #111;
+  color: white;
+  min-height: 100vh;
+  height: auto;
+  padding: 20px;
+  background: #111;          /* dark background */
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.15); /* subtle shadow */
+  overflow-y: auto;          /* scroll inside if needed */
+  flex-shrink: 0;
+  z-index: 1000;     
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.content em {
+  background: linear-gradient(135deg, #162a49, #414857);
+  color: #fff;
+  padding: 20px;
+  height: 100px;
+  border-radius: 16px;
+  width: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  justify-content: center;
+}
+
+
+.content {
+  flex: 10;
+  padding: 20px;
+}
+
+.grid {
+  display: flex;           /* horizontal layout */
+  flex-wrap: wrap;         /* allow wrapping to next line */
+  gap: 20px;               /* horizontal & vertical spacing */
+}
+
+.ncard {
+ background: linear-gradient(135deg, #0d1e38, #658deb);
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 20px; 
+  
+  
+}
+
+
+/* Button at bottom */
+.ncard button {
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #7287aa, #06b6d4);
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.ncard button:hover {
+  background:#45a049;
+}
+
+
+
+/*-----------------*/
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.request-form input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 300px;
+}
+
+table {
+  width: 100%;
+  background: white;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Promotion Card */
+.pcard {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 250px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 20px; 
+  /* extra space for safety */
+}
+
+.pcard .discount-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ef4444; /* bright red */
+  margin: 5px 0 10px 0;
+}
+
+/* Button at bottom */
+.pcard button {
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+
+
+.card {
+ background: linear-gradient(135deg, #536b8f, #1e2a45);
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 200px;
+
+}
+
+/* Small block-style form */
+.section .form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.section .form input,
+.section .form select {
+  display: block;
+  width: 280px;       /* narrow input */
+  padding: 6px 8px;   /* small padding */
+  margin: 6px 0;      /* small vertical spacing */
+  font-size: 13px;    /* smaller font */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.section .form input:focus,
+.section .form select:focus {
+  border-color: #495f91;
+  box-shadow: 0 0 4px rgba(73, 95, 145, 0.3);
+}
+
+.section .form button {
+  width: 150px;       /* small button */
+  padding: 6px 12px;
+  font-size: 13px;
+  background: #495f91;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.section .form button:hover {
+  background: #35447d;
+}
+
+.section .form .secondary-btn {
+  background: #ccc;
+  color: #333;
+}
+
+.section .form .secondary-btn:hover {
+  background: #b0b0b0;
+}
+
+.price-preview {
+  font-size: 13px;
+  color: #495f91;
+  margin-top: 2px;
+}
+
+/* App.css */
+
+/* App.css — page-level overrides and animations */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Page Transitions  */
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}

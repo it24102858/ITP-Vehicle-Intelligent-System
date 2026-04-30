@@ -1,0 +1,100 @@
+/* StatusTracker.css */
+.status-tracker {
+  width: 100%;
+}
+
+/* Cancelled state */
+.tracker-cancelled {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  background: rgba(231, 76, 60, 0.08);
+  border: 1px solid rgba(231, 76, 60, 0.2);
+  border-radius: 12px;
+}
+
+.cancelled-icon {
+  font-size: 1.4rem;
+}
+
+.cancelled-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e74c3c;
+}
+
+/* Steps */
+.tracker-steps {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.tracker-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.step-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-check {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 900;
+}
+
+.step-icon {
+  font-size: 1rem;
+}
+
+.step-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+/* Connector line */
+.tracker-line {
+  flex: 1;
+  height: 2px;
+  margin-top: 23px; /* center on circle */
+  transition: background 0.4s ease;
+  min-width: 20px;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .step-circle {
+    width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+
+  .step-label {
+    font-size: 0.62rem;
+  }
+
+  .tracker-line {
+    margin-top: 18px;
+    min-width: 10px;
+  }
+}

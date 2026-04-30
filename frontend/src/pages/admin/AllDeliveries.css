@@ -1,0 +1,234 @@
+.all-deliveries-page {
+  display: grid;
+  gap: 14px;
+}
+
+.all-deliveries-header {
+  background:
+    radial-gradient(circle at 8% 10%, rgba(74, 144, 226, 0.12), transparent 42%),
+    radial-gradient(circle at 95% 5%, rgba(245, 166, 35, 0.1), transparent 34%),
+    var(--bg-card);
+}
+
+.all-deliveries-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.all-eyebrow {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.all-deliveries-headline .page-title {
+  font-size: clamp(1.5rem, 3.8vw, 2.25rem);
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.all-deliveries-headline .page-subtitle {
+  margin-bottom: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.all-stats-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.all-stat-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  padding: 10px 12px;
+  display: grid;
+  gap: 4px;
+}
+
+.all-stat-label {
+  color: var(--text-muted);
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.all-stat-value {
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 3vw, 1.45rem);
+  line-height: 1;
+}
+
+.all-filter-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.all-panel-title {
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.all-panel-subtitle {
+  margin-top: 2px;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.all-filter-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.filter-field {
+  min-width: 0;
+}
+
+.filter-status .form-select {
+  width: 100%;
+}
+
+.filter-actions {
+  display: flex;
+  align-items: end;
+}
+
+.all-table-panel {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+}
+
+.all-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.all-table-count {
+  color: var(--text-secondary);
+  font-size: 0.76rem;
+}
+
+.all-state-block {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-secondary);
+}
+
+.all-empty-state {
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text-secondary);
+  border: 1px dashed var(--border-light);
+}
+
+.empty-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.id-chip {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  color: var(--text-primary);
+}
+
+.address-cell {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.agent-chip {
+  font-size: 0.76rem;
+  color: #4a90e2;
+  font-weight: 700;
+}
+
+.unassigned {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.78rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1100px) {
+  .all-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .all-filter-form {
+    grid-template-columns: minmax(0, 1fr) 180px auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .all-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .all-filter-form {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-actions .btn {
+    width: 100%;
+  }
+
+  .all-deliveries-header {
+    padding: 16px;
+  }
+
+  .all-deliveries-top {
+    align-items: flex-start;
+  }
+}

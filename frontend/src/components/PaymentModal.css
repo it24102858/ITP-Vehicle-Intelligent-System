@@ -1,0 +1,71 @@
+.payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-modal {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: var(--radius-lg);
+  width: 350px;
+}
+
+.payment-modal h2,
+.payment-modal p,
+.payment-modal strong {
+  color: var(--text-primary);
+}
+
+.payment-modal input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px 12px;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.payment-modal input::placeholder {
+  color: var(--text-muted);
+}
+
+.payment-modal input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.payment-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.pay-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 8px 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,121 @@
+.myd-hero {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(74, 144, 226, 0.14), transparent 38%),
+    radial-gradient(circle at 100% 0%, rgba(245, 166, 35, 0.12), transparent 34%),
+    var(--bg-card);
+}
+
+.myd-kpis {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.myd-kpi {
+  min-width: 110px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-elevated);
+  display: grid;
+  gap: 4px;
+}
+
+.myd-kpi-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.myd-kpi-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3.8vw, 1.6rem);
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.myd-search {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 260px;
+}
+
+.results-header {
+  margin-bottom: 10px;
+}
+
+.results-count {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.delivery-id-chip {
+  font-family: 'Courier New', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  color: var(--text-primary);
+}
+
+.order-detail-text {
+  color: var(--text-secondary);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.my-deliveries-hint {
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+}
+
+.hint-icon {
+  font-size: 1.45rem;
+  margin-bottom: 8px;
+}
+
+.link-btn {
+  border: none;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 780px) {
+  .myd-hero {
+    flex-direction: column;
+  }
+
+  .myd-search .btn {
+    width: 100%;
+  }
+
+  .search-input {
+    min-width: 100%;
+  }
+}
