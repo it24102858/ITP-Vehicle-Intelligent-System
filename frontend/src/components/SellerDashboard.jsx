@@ -18,6 +18,7 @@ function SellerDashboard({ onBack, user }) {
         minHeight: "100vh",
         background: "#ffffff",
       }}
+      
     >
       {/* Header Bar */}
       <div

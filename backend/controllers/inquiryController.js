@@ -1,5 +1,6 @@
 const Inquiry = require("../models/Inquiry");
 const Notification = require("../models/Notification");
+
 //create inquiry
 const createInquiry = async (req, res) => {
   const {

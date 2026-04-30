@@ -3,6 +3,7 @@ const router = express.Router();
 const inquiryController = require("../controllers/inquiryController");
 const messageController = require("../controllers/messageController");
 
+
 // Message routes (must come first - more specific)
 router.post("/messages", messageController.sendMessage);
 router.get("/messages/:inquiryId", messageController.getMessagesForInquiry);

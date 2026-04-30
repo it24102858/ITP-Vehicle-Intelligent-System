@@ -16,6 +16,7 @@ function InquiryDashboard({
   const [showNewForm, setShowNewForm] = useState(false);
   const [activeTab, setActiveTab] = useState("buyer");
 
+  
   const handleInquiryCreated = () => {
     setRefreshTrigger((prev) => prev + 1);
     setShowNewForm(false);

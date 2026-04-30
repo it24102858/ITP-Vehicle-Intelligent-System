@@ -1,6 +1,7 @@
 import InquiryDashboard from "./InquiryDashboard";
 import NotificationPanel from "./NotificationPanel";
 
+
 function BuyerDashboard({ onBack, user }) {
   return (
     <div

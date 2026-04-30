@@ -16,6 +16,7 @@ function NewInquiryForm({ onInquiryCreated, currentUser = null }) {
   const [success, setSuccess] = useState("");
   const [fieldErrors, setFieldErrors] = useState({});
 
+  
   // Initialize buyer phone from current user
   useEffect(() => {
     if (currentUser?.phone) {

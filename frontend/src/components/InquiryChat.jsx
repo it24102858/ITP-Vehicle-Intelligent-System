@@ -11,6 +11,7 @@ function InquiryChat({ selectedInquiry, userId }) {
   const [editText, setEditText] = useState("");
   const messagesEndRef = useRef(null);
 
+  
   const resolvedUserId = String(userId || selectedInquiry?.buyer_id || "").trim();
   const buyerId = String(selectedInquiry?.buyer_id || "").trim();
   const sellerId = String(selectedInquiry?.seller_id || "").trim();

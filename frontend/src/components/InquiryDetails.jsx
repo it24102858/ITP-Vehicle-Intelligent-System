@@ -21,6 +21,7 @@ function Icon({ name, size = 14, color = "currentColor" }) {
         <circle cx="16.5" cy="18.5" r="1" />
       </svg>
     );
+    
   }
   if (name === "user") {
     return (
