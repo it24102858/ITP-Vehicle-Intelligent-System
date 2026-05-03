@@ -37,8 +37,8 @@ const DeliverySchema = new mongoose.Schema(
       trim: true,
     },
   },
-  {
-    timestamps: true, // adds createdAt and updatedAt automatically
+  { // adds createdAt and updatedAt automatically
+    timestamps: true, 
   }
 );
 

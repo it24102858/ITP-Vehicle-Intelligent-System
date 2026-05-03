@@ -28,6 +28,7 @@
   color: var(--text-muted);
 }
 
+
 .all-deliveries-headline .page-title {
   font-size: clamp(1.5rem, 3.8vw, 2.25rem);
   margin-bottom: 6px;

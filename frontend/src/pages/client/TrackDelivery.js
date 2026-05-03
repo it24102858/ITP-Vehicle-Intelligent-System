@@ -31,6 +31,7 @@ const TrackDelivery = () => {
     }
   };
 
+  
   useEffect(() => {
     if (routeId) {
       loadDelivery(routeId);

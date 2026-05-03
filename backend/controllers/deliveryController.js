@@ -7,7 +7,7 @@ const STATUS_ORDER = ['Pending', 'Assigned', 'Shipped', 'Delivered'];
 // @desc    Create a new delivery request
 // @route   POST /api/deliveries
 // @access  Client
-// ─────────────────────────────────────────────────────────
+
 const createDelivery = async (req, res, next) => {
   try {
     const { customerName, contactNumber, address, orderDetails, deliveryDate } = req.body;
