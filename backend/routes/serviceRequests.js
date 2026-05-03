@@ -33,6 +33,7 @@ const getServiceUserQuery = (user) => {
     or.push({ assignedProvider: { $exists: false }, assignedRole: { $exists: false } });
   }
 
+  
   return { $or: or };
 };
 

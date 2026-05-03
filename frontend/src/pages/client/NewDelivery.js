@@ -37,6 +37,7 @@ const NewDelivery = () => {
     }
   };
 
+  
   if (successData) {
     return (
       <div className="page-wrapper new-delivery-page">

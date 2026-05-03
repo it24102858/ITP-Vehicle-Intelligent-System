@@ -32,6 +32,7 @@ const MyDeliveries = () => {
     }
   };
 
+  
   const handleCancel = async (id) => {
     if (!window.confirm('Are you sure you want to cancel this delivery? This cannot be undone.')) return;
     setCancelLoading(id);

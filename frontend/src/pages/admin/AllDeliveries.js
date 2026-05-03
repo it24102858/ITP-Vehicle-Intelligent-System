@@ -34,6 +34,7 @@ const AllDeliveries = () => {
       setLoading(false);
     }
   };
+  
 
   useEffect(() => {
     fetchDeliveries();

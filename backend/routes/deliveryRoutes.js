@@ -19,6 +19,7 @@ router.get('/stats', getStats);
 router.get('/my', getMyDeliveries);
 
 // CRUD
+
 router.route('/')
   .get(getAllDeliveries)
   .post(createDelivery);
