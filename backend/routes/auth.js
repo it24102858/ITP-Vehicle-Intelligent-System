@@ -9,7 +9,7 @@ const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRE });
 };
 
-// ── REGISTER ──────────────────────────────────────────────────────────────────
+// REGISTER 
 router.post('/register', async (req, res) => {
   try {
     const { name, email, password, role, phone } = req.body;
