@@ -47,6 +47,7 @@ router.get('/stats', async (req, res) => {
     const recentCompanies = await Company.find().sort({ createdAt: -1 }).limit(5).populate('createdBy', 'name');
     const serviceRoleUsers = await User.find({ role: { $in: ['service_provider', 'delivery_management', 'insurance'] } }).select('-password');
 
+    
     res.json({
       success: true,
       stats: { totalUsers, totalVehicles, totalCompanies, buyers, sellers },
