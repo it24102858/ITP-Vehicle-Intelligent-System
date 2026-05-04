@@ -95,7 +95,7 @@ function ImageUploader({ images, setImages }) {
   );
 }
 
-// Listed details
+// Vehicle listing Details
 
 function VehicleModal({ vehicle, onClose, onSuccess }) {
   const isEdit = !!vehicle;
